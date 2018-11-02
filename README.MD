@@ -6,8 +6,8 @@
 
 ## TODO list
 
-[x] Welke data ga ik gebruiken?
-[x] Wat ga ik vergelijken?
+- [x] Welke data ga ik gebruiken?
+- [x] Wat ga ik vergelijken?
     \- Genre - Jaar
     \- Genre - Page
     \- Land uitgaven - Jaar
@@ -40,11 +40,11 @@ De api konden we makelijk fixen met een NPM package
 
 We moeten een aantal vragen bedenken hoe we over wat we kunnen laten zien met de infomatie die we hebben.
 Hier onder de vragen.
-\[] In de jaren 80 kwamen demeeste horror / thriller boeken uit.
-\[] horror / thriller boeken zijn korter dan fantasy boeken.
-\[] Steven king heeft de meeste boeken.
-\[] Kinder boeken worden het meest geleend.
-\[] Welke publisher heeft de meesten boeken in de bieb.
+- \[] In de jaren 80 kwamen demeeste horror / thriller boeken uit.
+- \[] horror / thriller boeken zijn korter dan fantasy boeken.
+- \[] Steven king heeft de meeste boeken.
+- \[] Kinder boeken worden het meest geleend.
+- \[] Welke publisher heeft de meesten boeken in de bieb.
 
 Verder heb ik met een array gewerkt om de data goed te laten zien ik heb de data gescheiden op basis van boek.
 
@@ -73,8 +73,8 @@ Titus onderdeel:
 -   Info uit zn presentatie is wel nuttig voor later
 
 Todo: Halloween.
-[X] clean data
-[X] get all auteurs
+- [X] clean data
+- [X] get all auteurs
 
 ## Dag 4
 
@@ -93,4 +93,4 @@ Todo: Halloween.
 -   Hoe ga ik vergelijken van decenia, pak een na laatste nummer 19 *8* 0 zo zie ik in welk decenia het boek uit kwam en kan ik daar op vergelijken als deze met elkaar een komen.
 (boeken uit de vorige eeuw moet nog een check over)
 
-- 
+-
