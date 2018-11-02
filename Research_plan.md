@@ -6,28 +6,27 @@
 
 De data die je uti de API haalt is vrij uitbundig, en heeft veel verschillende Keys waar je op kan zoeken zoals bijvoorbeeld, year, publisher, language, authors. Dit is maar een stukje van de totalen verschillende keys.
 
-- Verzin onderzoeksvragen
+- Onderzoeksvragen
 Hoe is de verhouding tussen verschillende genres per decenia?
 bijvoorbeeld: Verhouding tussen horror en detective boeken in de jaren 70.
 bijvoorbeeld: Verhouding tussen romance en murdermystery in de jaren 90.
 
 
-- Verzin deelvragen (zijn er sinds de tweede feministische golf meer boeken over feminisme geschreven? Worden bepaalde themas meer uitgeleend, is er een verband tussen thema en boekdikte etc. etc.)
-
+- Deelvragen
 [] Zijn er door het success van Steven King meer horror boeken verchenen? om dit teemuleren.
 [] Wat is het overall meest geschreven genres.
 [] Wat is het minst geschreven genre.
 [] Wat is het dikste boek per decenia.
 [] Welke uitgever is het meest succesvolle per decenia.
 
-- Bedenk welke variablen je nodig gaat hebben om je vraag te beantwoorden.
+- Welke variable heb ik nodig.
   - Boekdikte.
   - Auteur.
   - Genre.
   - Uitgever.
 
 - Haal deze data uit de API en sla die op in jouw eigen "datastore".
-[] Done
+- [x] Fixed
 
 - Doorzoek die data op patronen
 - Visualiseer de patronen met D3

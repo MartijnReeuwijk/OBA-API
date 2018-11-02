@@ -80,8 +80,7 @@ Todo: Halloween.
 
 -   Marathon lopen
     Veel proberen om de juiste data naar een object te sturen.
--    [x] probleem oplossen.
-    Ik moest een .value er afhalen om het te laten werken.
+-   [x] probleem oplossen. Ik moest een .value er afhalen om het te laten werken.
 
 -   Het fixen van een .map (https://stackoverflow.com/questions/30803168/data-map-is-not-a-function)
 -    [x] Fixed
@@ -97,4 +96,4 @@ Todo: Halloween.
 - [x] Boeken object met genres
 - [x] Filter op alleen Boeken
 - [] Maak filter per decenia
-- [] Maak teller van genre 
+- [] Maak teller van genre
