@@ -40,11 +40,11 @@ De api konden we makelijk fixen met een NPM package
 
 We moeten een aantal vragen bedenken hoe we over wat we kunnen laten zien met de infomatie die we hebben.
 Hier onder de vragen.
-- \[] In de jaren 80 kwamen demeeste horror / thriller boeken uit.
-- \[] horror / thriller boeken zijn korter dan fantasy boeken.
-- \[] Steven king heeft de meeste boeken.
-- \[] Kinder boeken worden het meest geleend.
-- \[] Welke publisher heeft de meesten boeken in de bieb.
+- \[] Zijn er door het success van Steven King meer horror boeken verchenen? om dit teemuleren.
+- \[] Wat is het overall meest geschreven genres.
+- \[] Wat is het minst geschreven genre.
+- \[] Wat is het dikste boek per decenia.
+- \[] Welke uitgever is het meest succesvolle per decenia.
 
 Verder heb ik met een array gewerkt om de data goed te laten zien ik heb de data gescheiden op basis van boek.
 
@@ -80,17 +80,21 @@ Todo: Halloween.
 
 -   Marathon lopen
     Veel proberen om de juiste data naar een object te sturen.
-    [x] probleem oplossen.
+-    [x] probleem oplossen.
     Ik moest een .value er afhalen om het te laten werken.
 
 -   Het fixen van een .map (https://stackoverflow.com/questions/30803168/data-map-is-not-a-function)
-    [x] Fixed
+-    [x] Fixed
 
 -   Maak object per book/result zo dat ik daar op kan sorteren.
-    [x] Objecten maken.
-    [] Genre fixen
+-    [x] Objecten maken.
+-    [x] Genre fixen
 
 -   Hoe ga ik vergelijken van decenia, pak een na laatste nummer 19 *8* 0 zo zie ik in welk decenia het boek uit kwam en kan ik daar op vergelijken als deze met elkaar een komen.
 (boeken uit de vorige eeuw moet nog een check over)
 
--
+## Dag 5
+- [x] Boeken object met genres
+- [x] Filter op alleen Boeken
+- [] Maak filter per decenia
+- [] Maak teller van genre 
