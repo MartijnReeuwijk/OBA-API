@@ -97,3 +97,6 @@ Todo: Halloween.
 - [x] Filter op alleen Boeken
 - [] Maak filter per decenia
 - [] Maak teller van genre
+
+## Research plan is in research_plan.md en niet mijn readme
+De readme is mijn struggle / bevindingen
