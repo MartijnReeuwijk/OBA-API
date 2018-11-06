@@ -16,7 +16,7 @@ const client = new OBA({
 client.get('search', {
     q: 'rijk',
     sort: 'title',
-    facet: ['genre(thriller)','type(book)'],
+    facet: ['genre(thriller)', 'type(book)'],
     refine: true,
     librarian: true,
     page: 1
@@ -33,8 +33,8 @@ client.get('search', {
     // do Something with filterd data
     let add_a_decennium = add_decennium(book_object);
     let filter_by_decennium = filter_decennium(add_a_decennium);
-    // hier kan j ealtij nog combi
-    let filter_by_gerne = filter_gerne(boeken);
+    // dit komt iets later
+    let filter_by_gerne = filter_gerne(add_a_decennium);
     // let genre_pagenum_comparing = comparing(book_object);
 
   })
@@ -84,14 +84,24 @@ function create_book_obj(data) {
 
       pages: (typeof data.description === "undefined" ||
           typeof data.description['physical-description'] === "undefined") ?
-        "Geen pages" : data.description['physical-description']['$t'],
+          // parseint maakt er een number van en gooit al het on nodige weg
+        "Geen pages" : parseInt(data.description['physical-description']['$t'], 10),
+
 
       id: (typeof data.id['$t'] === "undefined" ||
           typeof data.id === "undefined") ?
-        "Ik heb geen id" : data.id['$t']
+        "Ik heb geen id" : data.id['$t'],
+
+      page: (typeof data.frabl['detail-page'] === "undefined" ||
+          typeof data.frabl === "undefined") ?
+        "https://www.oba.nl/home.html" : data.frabl[0]['detail-page'],
+
+      cover: (typeof data.coverimages === "undefined" ||
+          typeof data.coverimages.coverimage === "undefined") ? // Cover is een array die ik nog moet mappen
+        "http://www.placecage.com/c/100/200" : data.coverimages.coverimage[0]["$t"]
     })
   })
-  // console.log(boek);
+  console.log(boek);
   return boek
 }
 
@@ -106,7 +116,7 @@ function add_decennium(boeken) {
   return boeken
 }
 
-function filter_decennium(boeken){
+function filter_decennium(boeken) {
   boeken.forEach(boek => {
     if (boeken[boek.decennium]) {
       boeken[boek.decennium].push(boek)
@@ -114,16 +124,18 @@ function filter_decennium(boeken){
       boeken[boek.decennium] = [boek]
     }
   })
+  // console.log(boeken);
   // console.log(boeken["10s"].length);
 }
 
-function filter_gerne(boeken){
-  boeken.forEach(boek => {
-    if (boeken[boek.gerne]) {
-      boeken[boek.gerne].push(boek)
-    } else {
-      boeken[boek.gerne] = [boek]
-    }
-  })
-  console.log(boeken["thriller"].length);
-}
+// function filter_gerne(boeken){
+//   boeken.forEach(boek => {
+//     if (boeken[boek.genre]) {
+//       boeken[boek.genre].push(boek)
+//     } else {
+//       boeken[boek.genre] = [boek]
+//     }
+//   })
+//   // console.log(boeken["thriller"].length);
+//     console.log(boeken);
+// }
