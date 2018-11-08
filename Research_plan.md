@@ -16,7 +16,7 @@ bijvoorbeeld: Verhouding tussen romance en murdermystery in de jaren 90.
 [] Zijn er door het success van Steven King meer horror boeken verchenen? om dit teemuleren.
 [] Wat is het overall meest geschreven genres.
 [] Wat is het minst geschreven genre.
-[] Wat is het dikste boek per decenia.
+[x] Wat is het dikste boek per decenia.
 [] Welke uitgever is het meest succesvolle per decenia.
 
 - Welke variable heb ik nodig.
