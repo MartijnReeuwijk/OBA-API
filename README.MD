@@ -2,24 +2,24 @@
 
 With this CLI app you can filter the data from the OBA api by Gerne, Author, Decenia, and amount of pages
 
--   [OBA-API 📚](#oba-api---)
-    -   [Getting Started 🏁](#getting-started---)
+-   [OBA-API ](#oba-api-)
+    -   [Getting Started ](#getting-started-)
     -   [Prerequisites](#prerequisites)
-    -   [Installation 💾](#installation---)
-    -   [Running 🏃‍♂️](#running------)
-    -   [Built With 🛠️](#built-with----)
+    -   [Installation ](#installation-)
+    -   [Running ](#running-)
+    -   [Built With ](#built-with-)
     -   [Data struggles](#data-struggles)
-        -   [Issue's DirtyData 🛁](#issue-s-dirtydata---)
-        -   [Data Nesting 🐦](#data-nesting---)
-        -   [Data output exemple 📝](#data-output-exemple---)
+        -   [Issue's DirtyData](#issue-s-dirtydata-)
+        -   [Data Nesting](#data-nesting-)
+        -   [Data output exemple](#data-output-exemple-)
     -   [Research questions](#research-questions)
         -   [Research questions conclusion](#research-questions-conclusion)
-    -   [Visualisation](#visualisation)
+    -   [Visualization](#visualization)
     -   [Authors](#authors)
     -   [License](#license)
     -   [Acknowledgments and Thanks](#acknowledgments-and-thanks)
 
-## Getting Started 🏁
+## Getting Started 🎬
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -29,13 +29,13 @@ You will need the following things properly installed on your computer.
 
 -   [Git](https://git-scm.com/)
 -   [Node.js](https://nodejs.org/) (with npm)
--   [Ember CLI](https://ember-cli.com/)
 -   [Google Chrome](https://google.com/chrome/)
 
 ## Installation 💾
 
 -   `git@github.com:MartijnReeuwijk/functional-programming.git`
 -   `cd functional-programming`
+-   `npm install rijkvanzanten/node-oba-api`
 -   `npm install`
 
 ## Running 🏃‍♂️
@@ -70,7 +70,7 @@ I made this piece of code since the Oba sometimes used Roman Numerals to express
 
 ### Data Nesting 🐦
 
-Another problem was that the data is deeply nested so you need to go way to deep until yea can select the books / results.
+Another problem was that the data is deeply nested so you need to go way to deep until you can select the books / results.
 I solved this problem by the use of separate function that return the book results
 ```
 function core_json(results) {
@@ -79,7 +79,7 @@ return core_json;
 }
 ```
 
-I kept the results in a let instead of a straight return so i could console.log it easely to look at the data structure.
+I kept the results in a let instead of a straight return so i could console.log it easily to look at the data structure.
 This will keep the rest of the Code cleaner.
 
 ### Data output exemple 📝
@@ -101,35 +101,42 @@ The data output should look something like this
 
 ## Research questions❓
 
--   hypotosis
+### Hypotosis
     What is the comparison between Thriller and detective books in the 70ties and 80ties
 
 -   Sub-questions
--    \[] Did the success of Stephen king influence other writers to write more Horror and this is visible in the genre
--    \[x] What is the most written genre
--    \[x] What is the leased written genre
--    \[x] Which book has the most pages per genre
--    \[x] Which publisher is most "succesfull" this is measured by book releases
--    \[x] Total amount of books
+-    [ ] Did the success of Stephen king influence other writers to write more Horror and this is visible in the genre
+-    [x] What is the most written genre
+-    [x] What is the leased written genre
+-    [x] Which book has the most pages per genre
+-    [x] What is the comparison between the length of the books in the genres
+-    [x] Which publisher is most "succesfull" this is measured by book releases
+-    [x] Total amount of books
 
 
 ### Research questions conclusion ❓
 
--   0)**Total amount of books 91868**
--   1)**Horror is not a genre in the OBA**
-      So ill compare thriller and detective books instead
--   2)**What is the most written genre?**
-    The most written genre is psychologisch-verhaal with 11331 books makes it about 13% of all books
--   3)**What is the least written genre?**
-    The least written genre is Indisch-milieu with 4 books makes it about 0.0043% of all books
+1.   **Total amount of books**
+    - 91868
+2.  **Horror is not a genre in the OBA**
+    - So ill compare thriller and detective books instead
+3.   **What is the most written genre?**
+    - The most written genre is psychologisch-verhaal with 11331 books makes it about 13% of all books
+4.   **What is the least written genre?**
+    - The least written genre is Indisch-milieu with 4 books makes it about 0.0043% of all books
+5.   **Which publisher is most "succesfull" this is measured by book releases**
+    - There find are to many publishers to really give a good measurement on books
+6.  **What is the comparison between the length of the books in the genres**
 
-## Visualisation 👀
 
-For the visualisation i ran into a Big data problem. The data i can get from the API limits me since it would crash if i would request more than 140 books. My App would filter all the data in the correct way. So for the Visualisation i used less books that i originally wanted.
+## Visualization 👀
+
+For the visualization i ran into a Big data problem. The data i can get from the API limits me since it would crash if I would request more than 140 books. My App would filter all the data in the correct way. So for the Visualization I used less books that originally wanted.
+[comparison chart](https://beta.observablehq.com/@martijnreeuwijk/merged-chart-between-detective-and-thriller)
 [Thriller genre visual](https://beta.observablehq.com/@martijnreeuwijk/chart-that-shows-the-amount-of-pages-used-in-the-triller-gern)
 [Detective genre visual](https://beta.observablehq.com/@martijnreeuwijk/chart-that-shows-the-amount-of-pages-used-in-the-detective-ge)
 [Bigest Genres with amount of books](https://beta.observablehq.com/@martijnreeuwijk/gerne-pie-charts)
-[](<>)
+
 
 ## Authors
 
