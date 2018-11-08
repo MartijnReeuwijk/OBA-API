@@ -15,6 +15,7 @@ With this CLI app you can filter the data from the OBA api by Gerne, Author, Dec
     -   [Research questions](#research-questions)
         -   [Research questions conclusion](#research-questions-conclusion)
     -   [Visualization](#visualization)
+        - [Concept drawing ](### Concept drawing )
     -   [Authors](#authors)
     -   [License](#license)
     -   [Acknowledgments and Thanks](#acknowledgments-and-thanks)
@@ -101,8 +102,10 @@ The data output should look something like this
 
 ## Research questions❓
 
-### Hypotosis
-    What is the comparison between Thriller and Avontureroman books in the 70ties and 80ties
+### Hypothesis
+    The Thriller genre was on its highest point in the 70ties and 80ties where Stephen king led the charge.
+    _first Hypothesis: Thrillers are the most written genres_
+    _second Hypothesis: Books about spying and the cold war are on there highest point is the 80ties_
 
 -   Sub-questions
 -    [ ] Did the success of Stephen king influence other writers to write more Horror and this is visible in the genre
@@ -119,7 +122,7 @@ The data output should look something like this
 1.   **Total amount of books**
     - 91868
 2.  **Horror is not a genre in the OBA**
-    - So ill compare thriller and Avontureroman books instead
+    - So ill compare thriller and Avonture-roman books instead
 3.   **What is the most written genre?**
     - The most written genre is psychologisch-verhaal with 11331 books makes it about 13% of all books
 4.   **What is the least written genre?**
@@ -132,11 +135,15 @@ The data output should look something like this
 ## Visualization 👀
 
 For the visualization i ran into a Big data problem. The data i can get from the API limits me since it would crash if I would request more than 140 books. My App would filter all the data in the correct way. So for the Visualization I used less books that originally wanted.
-[comparison chart](https://beta.observablehq.com/@martijnreeuwijk/merged-chart-between-detective-and-thriller)
+[Comparison chart](https://beta.observablehq.com/@martijnreeuwijk/merged-chart-between-detective-and-thriller)
 [Thriller genre visual](https://beta.observablehq.com/@martijnreeuwijk/chart-that-shows-the-amount-of-pages-used-in-the-triller-gern)
 [Detective genre visual](https://beta.observablehq.com/@martijnreeuwijk/chart-that-shows-the-amount-of-pages-used-in-the-detective-ge)
 [Bigest Genres with amount of books](https://beta.observablehq.com/@martijnreeuwijk/gerne-pie-charts)
 
+### Concept drawing ✏️
+In the end I was not able to make the chart as I wanted as may of may not be visible but I would like to add the picture at the start of the chart so you can see the book. I was able to make something like this with Ember from my previous assignment
+
+![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/tree/master/assets/foto.png)
 
 ## Authors
 
