@@ -122,19 +122,19 @@ The data output should look something like this
 ### Research questions conclusion ❓
 
 1.   **Total amount of books**
-    - The Oba has 91868 unique books who have a general genre some (books might fall out)
+      -  The Oba has 91868 unique books who have a general genre some (books might fall out)
 2.  **Horror is not a genre in the OBA**
-    - So ill compare thriller and Avonture-roman books instead
+      -  So ill compare thriller and Avonture-roman books instead
 3.   **What is the most written genre?**
-    - The most written genre is psychologisch-verhaal with 11331 books makes it about 13% of all books
+      -  The most written genre is psychologisch-verhaal with 11331 books makes it about 13% of all books
 4.   **What is the least written genre?**
-    - The least written genre is Indisch-milieu with 4 books makes it about 0.0043% of all books
+      -  The least written genre is Indisch-milieu with 4 books makes it about 0.0043% of all books
 5.   **Which publisher is most "successful" this is measured by book releases**
-    - There find are to many publishers to really give a good measurement on books
+      -  There find are to many publishers to really give a good measurement on books
 6.  **What is the comparison between the length of the books in the genres**
-    - What is imidetly noticed is that the Thrillers have fluction in there range of pages.
-    - Most of the Thriller books are between 250/325 pages and the Avonture-roman are more between 350 / 500 pages.
-    - It turns out thrillers are in general below average book length while Avonture-roman are slightly above.
+      -  What is imidetly noticed is that the Thrillers have fluction in there range of pages.
+      -  Most of the Thriller books are between 250/325 pages and the Avonture-roman are more between 350 / 500 pages.
+      -  It turns out thrillers are in general below average book length while Avonture-roman are slightly above.
     > A study of more than 2,500 books appearing on New York Times bestseller and notable books lists and Google’s annual survey of the most discussed books reveals that the average length has increased from 320 pages in 1999 to 400 pages in 2014. Theguardian
 
 
