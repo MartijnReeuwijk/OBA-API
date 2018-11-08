@@ -102,10 +102,10 @@ The data output should look something like this
 
 ### Hypothesis
 
-    The Thriller genre was on its highest point in the 70ties and 80ties where Stephen king led the charge.
+    The Thriller genre was on its apex in the 70ties and 80ties where Stephen king led the charge.
 
 -   first Hypothesis: Thrillers are the most written genres
--   second Hypothesis: Books about spying and the cold war are on there highest point is the 80ties
+-   second Hypothesis: Books about spying and the cold war are on there apex is the 80ties
 
 #### Sub-questions
 
