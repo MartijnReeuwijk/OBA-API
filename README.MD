@@ -106,10 +106,10 @@ The data output should look something like this
 
 ### Hypothesis
     The Thriller genre was on its highest point in the 70ties and 80ties where Stephen king led the charge.
-    _first Hypothesis: Thrillers are the most written genres_
-    _second Hypothesis: Books about spying and the cold war are on there highest point is the 80ties_
+    __first Hypothesis: Thrillers are the most written genres__
+    __second Hypothesis: Books about spying and the cold war are on there highest point is the 80ties__
 
--   Sub-questions
+#### Sub-questions
 -    [ ] Did the success of Stephen king influence other writers to write more Horror and this is visible in the genre
 -    [x] What is the most written genre
 -    [x] What is the leased written genre
@@ -152,7 +152,7 @@ For the visualization i ran into a Big data problem. The data i can get from the
 ### Concept drawing ✏️
 In the end I was not able to make the chart as I wanted as may of may not be visible but I would like to add the picture at the start of the chart so you can see the book. I was able to make something like this with Ember from my previous assignment
 
-![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/tree/master/assets/foto.png)
+![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/blob/master/assets/foto.png?raw=true)
 
 ## Other files
 This is the original Research plan you are able to read it in at your own leisure
