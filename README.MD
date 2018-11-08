@@ -2,21 +2,21 @@
 
 With this CLI app you can filter the data from the OBA api by Gerne, Author, Decenia, and amount of pages
 
-- [OBA-API ](#oba-api---)
-  * [Getting Started ](#getting-started---)
+- [OBA-API 📚](#oba-api---)
+  * [Getting Started 🎬](#getting-started---)
   * [Prerequisites](#prerequisites)
-  * [Installation ](#installation---)
-  * [Running ](#running------)
-  * [Built With ️](#built-with----)
+  * [Installation 💾](#installation---)
+  * [Running 🏃‍♂️](#running------)
+  * [Built With 🛠️](#built-with----)
   * [Data struggles](#data-struggles)
-    + [Issue's DirtyData ](#issue-s-dirtydata---)
-    + [Data Nesting ](#data-nesting---)
-    + [Data output exemple ](#data-output-exemple---)
-  * [Research questions](#research-questions-)
+    + [Issue's DirtyData 🛁](#issue-s-dirtydata---)
+    + [Data Nesting 🐦](#data-nesting---)
+    + [Data output exemple 📝](#data-output-exemple---)
+  * [Research questions❓](#research-questions-)
     + [Hypothesis](#hypothesis)
-    + [Research questions conclusion ](#research-questions-conclusion--)
-  * [Visualization ](#visualization---)
-    + [Concept drawing ](#concept-drawing---)
+    + [Research questions conclusion ❓](#research-questions-conclusion--)
+  * [Visualization 👀](#visualization---)
+    + [Concept drawing ✏️](#concept-drawing---)
   * [Other files](#other-files)
   * [Authors](#authors)
   * [License](#license)
@@ -135,6 +135,7 @@ The data output should look something like this
       -  What is imidetly noticed is that the Thrillers have fluction in there range of pages.
       -  Most of the Thriller books are between 250/325 pages and the Avonture-roman are more between 350 / 500 pages.
       -  It turns out thrillers are in general below average book length while Avonture-roman are slightly above.
+
     > A study of more than 2,500 books appearing on New York Times bestseller and notable books lists and Google’s annual survey of the most discussed books reveals that the average length has increased from 320 pages in 1999 to 400 pages in 2014. Theguardian
 
 
