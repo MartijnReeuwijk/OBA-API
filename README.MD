@@ -105,12 +105,12 @@ The data output should look something like this
     What is the comparison between Thriller and detective books in the 70ties and 80ties
 
 -   Sub-questions
-    \[] Did the success of Stephen king influence other writers to write more Horror and this is visible in the genre
-    \[x] What is the most written genre
-    \[x] What is the leased written genre
-    \[x] Which book has the most pages per genre
-    \[x] Which publisher is most "succesfull" this is measured by book releases
-    \[x] Total amount of books
+-    \[] Did the success of Stephen king influence other writers to write more Horror and this is visible in the genre
+-    \[x] What is the most written genre
+-    \[x] What is the leased written genre
+-    \[x] Which book has the most pages per genre
+-    \[x] Which publisher is most "succesfull" this is measured by book releases
+-    \[x] Total amount of books
 
 
 ### Research questions conclusion ❓
