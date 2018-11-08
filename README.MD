@@ -102,7 +102,7 @@ The data output should look something like this
 ## Research questions❓
 
 ### Hypotosis
-    What is the comparison between Thriller and detective books in the 70ties and 80ties
+    What is the comparison between Thriller and Avontureroman books in the 70ties and 80ties
 
 -   Sub-questions
 -    [ ] Did the success of Stephen king influence other writers to write more Horror and this is visible in the genre
@@ -110,7 +110,7 @@ The data output should look something like this
 -    [x] What is the leased written genre
 -    [x] Which book has the most pages per genre
 -    [x] What is the comparison between the length of the books in the genres
--    [x] Which publisher is most "succesfull" this is measured by book releases
+-    [x] Which publisher is most "successful" this is measured by book releases
 -    [x] Total amount of books
 
 
@@ -119,12 +119,12 @@ The data output should look something like this
 1.   **Total amount of books**
     - 91868
 2.  **Horror is not a genre in the OBA**
-    - So ill compare thriller and detective books instead
+    - So ill compare thriller and Avontureroman books instead
 3.   **What is the most written genre?**
     - The most written genre is psychologisch-verhaal with 11331 books makes it about 13% of all books
 4.   **What is the least written genre?**
     - The least written genre is Indisch-milieu with 4 books makes it about 0.0043% of all books
-5.   **Which publisher is most "succesfull" this is measured by book releases**
+5.   **Which publisher is most "successful" this is measured by book releases**
     - There find are to many publishers to really give a good measurement on books
 6.  **What is the comparison between the length of the books in the genres**
 
