@@ -82,7 +82,7 @@ This will keep the rest of the Code cleaner.
 ### Data output exemple 📝
 
 The data output should look something like this
-```
+
         {
           title: 'Bewijs het maar',
           author: 'Rudy Soetewey',
@@ -95,7 +95,7 @@ The data output should look something like this
           oba_url: 'https://www.oba.nl/home.html'
           },
 
-          ```
+
 
     ## Research questions❓
 
