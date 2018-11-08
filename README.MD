@@ -14,7 +14,7 @@ With this CLI app you can filter the data from the OBA api by Gerne, Author, Dec
         -   [Data output exemple 📝](#data-output-exemple---)
     -   [Research questions❓](#research-questions-)
         -   [Hypothesis](#hypothesis)
-        -   [Research questions conclusion ❓](#research-questions-conclusion--)
+        -   [Research questions findings ❓](#research-questions-findings--)
     -   [Visualization 👀](#visualization---)
         -   [Concept drawing ✏️](#concept-drawing---)
     -   [Other files](#other-files)
@@ -117,22 +117,25 @@ The data output should look something like this
 -   [x] Which publisher is most "successful" this is measured by book releases
 -   [x] Total amount of books
 
-### Research questions conclusion ❓
+### Research questions findings ❓
 
 1.  **Total amount of books**
     -   The Oba has 91868 unique books who have a general genre some (books might fall out)
 2.  **Horror is not a genre in the OBA**
-    -   So ill compare thriller and Avonture-roman books instead
+    -   So ill compare thriller and Avonture-roman books instead.
+    -   It did take me by surprise the fast amount of genres there are in the OBA. In my PieChart visualization you can see a big part of the genres but only the ones who have atleast a 1000 unique books. There are still way smaller ones to explore.
 3.  **What is the most written genre?**
-    -   The most written genre is psychologisch-verhaal with 11331 books makes it about 13% of all books
+    -   The most written genre is psychologisch-verhaal with 11331 books makes it about 13% of all books.
 4.  **What is the least written genre?**
     -   The least written genre is Indisch-milieu with 4 books makes it about 0.0043% of all books
+    -   I did not realise the OBA would be this specific with there use of genres since there are only 4 books in the genre i would have thought they would bulk them.
 5.  **Which publisher is most "successful" this is measured by book releases**
-    -   There find are to many publishers to really give a good measurement on books
+    -   There find are to many publishers to really give a good measurement on books.
+    -   I did not realise there are so any different publishers. Also the data would not have been conclusive anyway since a book can be re-released by a different publisher.
 6.  **What is the comparison between the length of the books in the genres**
-
     -   What is immediately noticed is that the Thrillers have **less** fluctuation in there range of pages.
     -   Most of the Thriller books are between 250/325 pages and the Avonture-roman are more between 350 / 500 pages.
+    -   I personally thought Thrillers would be lengthy books with a 
     -   It turns out thrillers are in general below average book length while Avonture-roman are slightly above.
 
     > A study of more than 2,500 books appearing on New York Times bestseller and notable books lists and Google’s annual survey of the most discussed books reveals that the average length has increased from 320 pages in 1999 to 400 pages in 2014. Theguardian
