@@ -145,6 +145,12 @@ In the end I was not able to make the chart as I wanted as may of may not be vis
 
 ![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/tree/master/assets/foto.png)
 
+## Other files
+This is the original Research plan you are able to read it in at your own leisure
+- [Research plan](https://github.com/MartijnReeuwijk/functional-programming/tree/master/Research_plan.md)
+- [Step by step what i did every day](https://github.com/MartijnReeuwijk/functional-programming/tree/master/proces.md)
+
+
 ## Authors
 
 -   **Martijn Reeuwijk** - _Initial work_ - [MartijnReeuwijk](https://github.com/MartijnReeuwijk)
@@ -157,5 +163,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 -   Tech-treck squad
 -   Thanks to [Jsonformatter](https://jsonformatter.curiousconcept.com/) by helping me better understand the data structure.
-
--   etc
