@@ -1,3 +1,4 @@
+// removed the Wrappper due to a problem
 const OBA = require('oba-api');
 
 // Setup authentication to api server
@@ -14,42 +15,88 @@ const client = new OBA({
 // Example search to the word 'rijk' sorted by title:
 
 client.get('search', {
-    q: 'rijk',
+    q: "format:book",
     sort: 'title',
-    facet: ['genre(thriller)', 'type(book)'],
+    facet: ['genre(Detective )', 'type(book)'],
     refine: true,
     librarian: true,
-    page: 1
+    page: 3
   })
 
   .then(results => JSON.parse(results))
   .then(results => {
-    // filter data
+    client.get('refine', {
+        rctx: "AWNkYOZmYGcwzDfMKiouLTY1TKooNUrLLkzNLEysKMnIZGZk4MxNzMxjYGYQT8svyk0ssUrKz8@mBBGMzNKZ8UWpycUFqUUFiemprEYGTAwPzjHeKr9VznSvj4lR40gGIwMDe35SIgMDg6J$UX5$iX5OZmFpZoo$UIy9tCiHgTUvhxEA",
+        count: 100
+      })
+      .then(response => JSON.parse(response))
+      .then(response => {
+
+        let metadata = response.aquabrowser.facets.facet
+        let genre_object = []
+// boi al die verschillende opties
+        let genreCounts = metadata.find(item => item.id == "Genre").value
+        genreCounts = genreCounts.map(genre => {
+          return {
+            count: genre.count,
+            genre: genre.id
+          }
+        })
+        // console.log(genreCounts);
+
+        //  metadata.forEach(type => {
+        //   if (type.id === "Genre") {
+        //     genre_object.push({
+        //       genre: type.value
+        //     })
+        //   }
+        //   return genre_object
+        // })
+
+
+        // console.log(genreCounts);
+
+      })
+
     let raw_data = raw_json(results);
     let core_data = core_json(results);
     let auteurs = get_auteurs(core_data);
     let book_object = create_book_obj(core_data);
 
     // do Something with filterd data
+    // I did this ceperate
+
     let add_a_decennium = add_decennium(book_object);
+
+    // Filter functions
+
     let filter_by_decennium = filter_decennium(add_a_decennium);
-    // dit komt iets later
-    let filter_by_gerne = filter_gerne(add_a_decennium);
+    let filter_by_genre = filter_genre(add_a_decennium);
+    let filter_by_author = filter_author(add_a_decennium);
+
+    // get / visual funtions
+    // Is this to much chaining?
+    // werkt wel maar anders opgelost
+
+    // let count_by_author = count_author(filter_by_author);
     // let genre_pagenum_comparing = comparing(book_object);
 
   })
   .catch(err => console.log(err)) // Something went wrong in the request to the API
 
+// these functions are no longer needed
+// but ill keepem just in case stuff changes
 function raw_json(results) {
   // console.log(results);
 }
 
 function core_json(results) {
   let core_json = results.aquabrowser.results.result;
-  // console.log(core_json);
   return core_json;
 }
 
+
+// real stuff starts here
 function get_auteurs(data) {
   let all_authors = data.map(data => data.authors)
   // console.log(all_authors)
@@ -59,7 +106,6 @@ function get_auteurs(data) {
 function create_book_obj(data) {
   let boek = []
   data.forEach(data => {
-    // console.log(data);
     boek.push({
       title: (typeof data.titles['short-title'] === "undefined") ?
         "Geen title" : data.titles['short-title']['$t'],
@@ -84,24 +130,29 @@ function create_book_obj(data) {
 
       pages: (typeof data.description === "undefined" ||
           typeof data.description['physical-description'] === "undefined") ?
-          // parseint maakt er een number van en gooit al het on nodige weg
-        "Geen pages" : parseInt(data.description['physical-description']['$t'], 10),
-
+        // parseint maakt er een number van en gooit al het on nodige weg
+        // deze reguliere expressie zorgt er voor dat hij niet stuk gaat op romeinse cijferss
+        // .match(/\d+/g).map(Number);
+        "Geen pages" : parseInt(data.description['physical-description']['$t'].match(/\d+/g).map(Number), 10),
 
       id: (typeof data.id['$t'] === "undefined" ||
           typeof data.id === "undefined") ?
         "Ik heb geen id" : data.id['$t'],
 
-      page: (typeof data.frabl['detail-page'] === "undefined" ||
+      oba_url: (typeof data.frabl['detail-page'] === "undefined" ||
           typeof data.frabl === "undefined") ?
-        "https://www.oba.nl/home.html" : data.frabl[0]['detail-page'],
+        "https://www.oba.nl/home.html" : data.frabl[0]['detail-page']
+        // ,
+// Not used and brings an issue i dont have time to solve now
+      // cover: (typeof data.coverimages === "undefined" ||
+      //     typeof data.coverimages.coverimage === "undefined") ? // Cover is een array die ik nog moet mappen
+      //   "http://www.placecage.com/c/100/200" : data.coverimages.coverimage[0]["$t"]
 
-      cover: (typeof data.coverimages === "undefined" ||
-          typeof data.coverimages.coverimage === "undefined") ? // Cover is een array die ik nog moet mappen
-        "http://www.placecage.com/c/100/200" : data.coverimages.coverimage[0]["$t"]
     })
+
   })
   console.log(boek);
+
   return boek
 }
 
@@ -126,16 +177,40 @@ function filter_decennium(boeken) {
   })
   // console.log(boeken);
   // console.log(boeken["10s"].length);
+  return boeken
+
 }
 
-// function filter_gerne(boeken){
-//   boeken.forEach(boek => {
-//     if (boeken[boek.genre]) {
-//       boeken[boek.genre].push(boek)
-//     } else {
-//       boeken[boek.genre] = [boek]
-//     }
-//   })
-//   // console.log(boeken["thriller"].length);
-//     console.log(boeken);
-// }
+function filter_genre(boeken) {
+  boeken.forEach(boek => {
+    if (boeken[boek.genre]) {
+      boeken[boek.genre].push(boek)
+    } else {
+      boeken[boek.genre] = [boek]
+    }
+  })
+  // console.log(boeken["Thriller"].length);
+  // console.log(boeken);
+  return boeken
+
+}
+
+function filter_author(boeken) {
+  boeken.forEach(boek => {
+    if (boeken[boek.author]) {
+      boeken[boek.author].push(boek)
+    } else {
+      boeken[boek.author] = [boek]
+    }
+  })
+  // console.log(boeken);
+  // console.log(boeken);
+  return boeken
+
+}
+
+function count_author(author) {
+  // console.log(author);
+  //   console.log(author.map(a => a.author));
+
+}
