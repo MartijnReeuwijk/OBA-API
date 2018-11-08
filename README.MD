@@ -2,23 +2,25 @@
 
 With this CLI app you can filter the data from the OBA api by Gerne, Author, Decenia, and amount of pages
 
--   [OBA-API ](#oba-api-)
-    -   [Getting Started ](#getting-started-)
-    -   [Prerequisites](#prerequisites)
-    -   [Installation ](#installation-)
-    -   [Running ](#running-)
-    -   [Built With ](#built-with-)
-    -   [Data struggles](#data-struggles)
-        -   [Issue's DirtyData](#issue-s-dirtydata-)
-        -   [Data Nesting](#data-nesting-)
-        -   [Data output exemple](#data-output-exemple-)
-    -   [Research questions](#research-questions)
-        -   [Research questions conclusion](#research-questions-conclusion)
-    -   [Visualization](#visualization)
-        - [Concept drawing ](### Concept drawing )
-    -   [Authors](#authors)
-    -   [License](#license)
-    -   [Acknowledgments and Thanks](#acknowledgments-and-thanks)
+- [OBA-API ](#oba-api---)
+  * [Getting Started ](#getting-started---)
+  * [Prerequisites](#prerequisites)
+  * [Installation ](#installation---)
+  * [Running ](#running------)
+  * [Built With ️](#built-with----)
+  * [Data struggles](#data-struggles)
+    + [Issue's DirtyData ](#issue-s-dirtydata---)
+    + [Data Nesting ](#data-nesting---)
+    + [Data output exemple ](#data-output-exemple---)
+  * [Research questions](#research-questions-)
+    + [Hypothesis](#hypothesis)
+    + [Research questions conclusion ](#research-questions-conclusion--)
+  * [Visualization ](#visualization---)
+    + [Concept drawing ](#concept-drawing---)
+  * [Other files](#other-files)
+  * [Authors](#authors)
+  * [License](#license)
+  * [Acknowledgments and Thanks](#acknowledgments-and-thanks)
 
 ## Getting Started 🎬
 
@@ -120,7 +122,7 @@ The data output should look something like this
 ### Research questions conclusion ❓
 
 1.   **Total amount of books**
-    - 91868
+    - The Oba has 91868 unique books who have a general genre some (books might fall out)
 2.  **Horror is not a genre in the OBA**
     - So ill compare thriller and Avonture-roman books instead
 3.   **What is the most written genre?**
@@ -130,15 +132,21 @@ The data output should look something like this
 5.   **Which publisher is most "successful" this is measured by book releases**
     - There find are to many publishers to really give a good measurement on books
 6.  **What is the comparison between the length of the books in the genres**
+    - What is imidetly noticed is that the Thrillers have fluction in there range of pages.
+    - Most of the Thriller books are between 250/325 pages and the Avonture-roman are more between 350 / 500 pages.
+    - It turns out thrillers are in general below average book length while Avonture-roman are slightly above.
+    > A study of more than 2,500 books appearing on New York Times bestseller and notable books lists and Google’s annual survey of the most discussed books reveals that the average length has increased from 320 pages in 1999 to 400 pages in 2014. Theguardian
+
+
 
 
 ## Visualization 👀
 
 For the visualization i ran into a Big data problem. The data i can get from the API limits me since it would crash if I would request more than 140 books. My App would filter all the data in the correct way. So for the Visualization I used less books that originally wanted.
-[Comparison chart](https://beta.observablehq.com/@martijnreeuwijk/merged-chart-between-detective-and-thriller)
-[Thriller genre visual](https://beta.observablehq.com/@martijnreeuwijk/chart-that-shows-the-amount-of-pages-used-in-the-triller-gern)
-[Detective genre visual](https://beta.observablehq.com/@martijnreeuwijk/chart-that-shows-the-amount-of-pages-used-in-the-detective-ge)
-[Bigest Genres with amount of books](https://beta.observablehq.com/@martijnreeuwijk/gerne-pie-charts)
+- [Comparison chart](https://beta.observablehq.com/@martijnreeuwijk/merged-chart-between-detective-and-thriller)
+- [Thriller genre visual](https://beta.observablehq.com/@martijnreeuwijk/chart-that-shows-the-amount-of-pages-used-in-the-triller-gern)
+- [Detective genre visual](https://beta.observablehq.com/@martijnreeuwijk/chart-that-shows-the-amount-of-pages-used-in-the-detective-ge)
+ - [Bigest Genres with amount of books](https://beta.observablehq.com/@martijnreeuwijk/gerne-pie-charts)
 
 ### Concept drawing ✏️
 In the end I was not able to make the chart as I wanted as may of may not be visible but I would like to add the picture at the start of the chart so you can see the book. I was able to make something like this with Ember from my previous assignment
@@ -163,3 +171,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 -   Tech-treck squad
 -   Thanks to [Jsonformatter](https://jsonformatter.curiousconcept.com/) by helping me better understand the data structure.
+- The Guardian [are books getting longer?](https://www.theguardian.com/books/2015/dec/10/are-books-getting-longer-survey-marlon-james-hanya-yanagihara)
