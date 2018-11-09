@@ -107,6 +107,8 @@ The data output should look something like this
 -   first Hypothesis: Thrillers are the most written genres
 -   second Hypothesis: Books about spying and the cold war are on there apex is the 80ties
 
+- In the end I was notable to awnser this question
+
 #### Sub-questions
 
 -   [ ] Did the success of Stephen king influence other writers to write more Horror and this is visible in the genre
@@ -135,6 +137,7 @@ The data output should look something like this
 6.  **What is the comparison between the length of the books in the genres**
     -   What is immediately noticed is that the Thrillers have **less** fluctuation in there range of pages.
     -   Most of the Thriller books are between 250/325 pages and the Avonture-roman are more between 350 / 500 pages.
+    -   I personally thought Thrillers would be lengthy books with a
     -   It turns out thrillers are in general below average book length while Avonture-roman are slightly above.
 
     > A study of more than 2,500 books appearing on New York Times bestseller and notable books lists and Google’s annual survey of the most discussed books reveals that the average length has increased from 320 pages in 1999 to 400 pages in 2014. Theguardian
@@ -173,4 +176,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 -   Tech-treck squad
 -   Thanks to [Jsonformatter](https://jsonformatter.curiousconcept.com/) by helping me better understand the data structure.
+-  Bas Pieren [Github](https://github.com/BasPieren/)
 -   The Guardian [are books getting longer?](https://www.theguardian.com/books/2015/dec/10/are-books-getting-longer-survey-marlon-james-hanya-yanagihara)
