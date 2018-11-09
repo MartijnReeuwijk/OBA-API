@@ -107,7 +107,7 @@ The data output should look something like this
 -   first Hypothesis: Thrillers are the most written genres
 -   second Hypothesis: Books about spying and the cold war are on there apex is the 80ties
 
-- In the end I was notable to awnser this question
+-   In the end I was notable to awnser this question
 
 #### Sub-questions
 
@@ -155,7 +155,11 @@ For the visualization i ran into a Big data problem. The data i can get from the
 
 In the end I was not able to make the chart as I wanted as may of may not be visible but I would like to add the picture at the start of the chart so you can see the book. I was able to make something like this with Ember from my previous assignment
 
+-   First Design
 ![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/blob/master/assets/foto.png?raw=true)
+
+-   Second Design
+![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/blob/master/assets/2.png?raw=true)
 
 ## Other files
 
