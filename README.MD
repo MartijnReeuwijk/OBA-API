@@ -161,6 +161,8 @@ In the end I was not able to make the chart as I wanted as may of may not be vis
 -   Second Design
 ![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/blob/master/assets/foto2.png?raw=true)
 
+- The final visualization is the link below.
+![Comparison chart](https://beta.observablehq.com/@martijnreeuwijk/merged-chart-between-detective-and-thriller)
 ## Other files
 
 This is the original Research plan you are able to read it in at your own leisure
