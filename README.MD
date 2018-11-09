@@ -159,7 +159,7 @@ In the end I was not able to make the chart as I wanted as may of may not be vis
 ![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/blob/master/assets/foto.png?raw=true)
 
 -   Second Design
-![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/blob/master/assets/2.png?raw=true)
+![Concept drawing](https://github.com/MartijnReeuwijk/functional-programming/blob/master/assets/foto2.png?raw=true)
 
 ## Other files
 
